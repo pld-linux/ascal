@@ -1,0 +1,11 @@
+--- ascal-0.1.1/configure.ac	2006-12-30 01:54:39.000000000 +0100
++++ ascal-0.1.1/configure.ac-new	2007-11-01 01:41:27.417445220 +0100
+@@ -65,7 +65,7 @@
+         CPPFLAGS="$CPPFLAGS -g -O0"
+ else
+     CPPFLAGS=[`echo "$CXXFLAGS" | $SED -e 's/-O[0-9]*//g'`]
+-	CPPFLAGS="$CPPFLAGS -O3"
++	CPPFLAGS="$CPPFLAGS"
+ fi
+ 
+ AC_ARG_ENABLE(Werror,
