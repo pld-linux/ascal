@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/ascal/%{name}-%{version}.tar.bz2
 # Source0-md5:	d0121cac9ab3af6b5ef6501fd602b96c
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-optimization.patch
+Patch2:		%{name}-gcc.patch
 URL:		http://sourceforge.net/projects/ascal/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -29,6 +30,7 @@ ulepszeń.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__intltoolize}
@@ -36,8 +38,7 @@ ulepszeń.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure \
-	--disable-Werror
+%configure
 %{__make}
 
 %install
