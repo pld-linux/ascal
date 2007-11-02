@@ -13,6 +13,7 @@ Patch2:		%{name}-gcc.patch
 URL:		http://sourceforge.net/projects/ascal/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	intltool
 BuildRequires:	libglademm >= 2.4.0
 BuildRequires:	libgnomecanvasmm-devel >= 2.0.0
 BuildRequires:	libsigc++-devel >= 2.0.0
