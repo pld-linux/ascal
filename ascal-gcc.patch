@@ -1,12 +1,18 @@
---- ascal-0.1.1/src/gui_board.cpp	2007-11-01 02:13:40.488264786 +0100
-+++ ascal-0.1.1/src/gui_board.cpp-new	2007-11-01 02:12:21.644640775 +0100
-@@ -305,8 +305,8 @@
- }
- 
- 
-+ko_t ko; //the calculated coordinates
- ko_t gui_board::find_circle(int field) const {
--	ko_t ko; //the calculated coordinates
- 	
- 	//you should draw the board for yourself to understand this!
- 	/* Okay here is one... ;)	
+--- ascal-0.1.1/src/gui_board.cpp.orig	2006-12-30 00:45:08.000000000 +0100
++++ ascal-0.1.1/src/gui_board.cpp	2008-01-05 16:46:56.475221055 +0100
+@@ -335,6 +335,7 @@
+ 				ko.x=4;
+ 			break;
+ 		case 2:
++		default: // stupid gcc, avoid "uninitialized variable" warning
+ 			if(field<15)
+ 				ko.x=2;
+ 			else
+@@ -357,6 +358,7 @@
+ 				ko.y=5;
+ 			break;
+ 		case 3:
++		default: // stupid gcc, avoid "uninitialized variable" warning
+ 			if(field<4)
+ 				ko.y=0;
+ 			else
