@@ -11,12 +11,14 @@ Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-optimization.patch
 Patch2:		%{name}-gcc.patch
 URL:		http://sourceforge.net/projects/ascal/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
+BuildRequires:	gtkmm-devel >= 2.6.0
 BuildRequires:	intltool
 BuildRequires:	libglademm >= 2.4.0
 BuildRequires:	libgnomecanvasmm-devel >= 2.0.0
-BuildRequires:	libsigc++-devel >= 2.0.0
+BuildRequires:	libsigc++-devel >= 1:2.0.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
