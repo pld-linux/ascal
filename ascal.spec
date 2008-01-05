@@ -1,5 +1,5 @@
-Summary:	Gnome Version of the board game Lasca
-Summary(pl.UTF-8):	Wersja gry Lasca dla Gnome
+Summary:	GNOME Version of the board game Lasca
+Summary(pl.UTF-8):	Wersja gry Lasca dla GNOME
 Name:		ascal
 Version:	0.1.1
 Release:	1
@@ -24,7 +24,7 @@ Lasca is a game similar to Draughts but with some really cool
 enhancements.
 
 %description -l pl.UTF-8
-Lasca jest to gra podobna do Warcabów ale posiada wiele ciekawych
+Lasca to gra podobna do warcabów, ale mająca wiele ciekawych
 ulepszeń.
 
 %prep
@@ -35,7 +35,7 @@ ulepszeń.
 
 %build
 %{__intltoolize}
-%{__aclocal} -I m4/
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
